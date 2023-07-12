@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1EC6DB2A3531CE00F2D3FB /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1EC6DA2A3531CE00F2D3FB /* ScanView.swift */; };
 		DF5C12CB2A325A8F009E1122 /* WiFiScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C12CA2A325A8F009E1122 /* WiFiScanApp.swift */; };
 		DF5C12CD2A325A8F009E1122 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C12CC2A325A8F009E1122 /* ContentView.swift */; };
 		DF5C12CF2A325A90009E1122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5C12CE2A325A90009E1122 /* Assets.xcassets */; };
 		DF5C12D22A325A90009E1122 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5C12D12A325A90009E1122 /* Preview Assets.xcassets */; };
+		DF5C12DC2A325B0F009E1122 /* WiFiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5C12DB2A325B0F009E1122 /* WiFiClient.swift */; };
+		DFBF26972A34FB2400E22DC4 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF26962A34FB2400E22DC4 /* ConnectionView.swift */; };
+		DFC6BF942A33D5DE00749B13 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6BF932A33D5DE00749B13 /* NetworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF5C12C72A325A8F009E1122 /* WiFiScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1EC6DA2A3531CE00F2D3FB /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		DF5C12C72A325A8F009E1122 /* Wi-Fi API Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wi-Fi API Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5C12CA2A325A8F009E1122 /* WiFiScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiScanApp.swift; sourceTree = "<group>"; };
 		DF5C12CC2A325A8F009E1122 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF5C12CE2A325A90009E1122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5C12D12A325A90009E1122 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF5C12D32A325A90009E1122 /* WiFiScan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WiFiScan.entitlements; sourceTree = "<group>"; };
+		DF5C12DB2A325B0F009E1122 /* WiFiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiClient.swift; sourceTree = "<group>"; };
+		DFBF26962A34FB2400E22DC4 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		DFC6BF932A33D5DE00749B13 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		DFE427102A32E16600217BE8 /* WiFiScan.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WiFiScan.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +52,7 @@
 		DF5C12C82A325A8F009E1122 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF5C12C72A325A8F009E1122 /* WiFiScan.app */,
+				DF5C12C72A325A8F009E1122 /* Wi-Fi API Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,10 +60,11 @@
 		DF5C12C92A325A8F009E1122 /* WiFiScan */ = {
 			isa = PBXGroup;
 			children = (
+				DFE427102A32E16600217BE8 /* WiFiScan.entitlements */,
+				DF5C12D92A325A9A009E1122 /* Models */,
+				DF5C12DA2A325AA1009E1122 /* Views */,
 				DF5C12CA2A325A8F009E1122 /* WiFiScanApp.swift */,
-				DF5C12CC2A325A8F009E1122 /* ContentView.swift */,
 				DF5C12CE2A325A90009E1122 /* Assets.xcassets */,
-				DF5C12D32A325A90009E1122 /* WiFiScan.entitlements */,
 				DF5C12D02A325A90009E1122 /* Preview Content */,
 			);
 			path = WiFiScan;
@@ -69,12 +78,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DF5C12D92A325A9A009E1122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF5C12DB2A325B0F009E1122 /* WiFiClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF5C12DA2A325AA1009E1122 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF5C12CC2A325A8F009E1122 /* ContentView.swift */,
+				DFBF26962A34FB2400E22DC4 /* ConnectionView.swift */,
+				DF1EC6DA2A3531CE00F2D3FB /* ScanView.swift */,
+				DFC6BF932A33D5DE00749B13 /* NetworkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF5C12C62A325A8F009E1122 /* WiFiScan */ = {
+		DF5C12C62A325A8F009E1122 /* Wi-Fi API Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF5C12D62A325A90009E1122 /* Build configuration list for PBXNativeTarget "WiFiScan" */;
+			buildConfigurationList = DF5C12D62A325A90009E1122 /* Build configuration list for PBXNativeTarget "Wi-Fi API Test" */;
 			buildPhases = (
 				DF5C12C32A325A8F009E1122 /* Sources */,
 				DF5C12C42A325A8F009E1122 /* Frameworks */,
@@ -84,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = WiFiScan;
+			name = "Wi-Fi API Test";
 			productName = WiFiScan;
-			productReference = DF5C12C72A325A8F009E1122 /* WiFiScan.app */;
+			productReference = DF5C12C72A325A8F009E1122 /* Wi-Fi API Test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF5C12C62A325A8F009E1122 /* WiFiScan */,
+				DF5C12C62A325A8F009E1122 /* Wi-Fi API Test */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5C12CD2A325A8F009E1122 /* ContentView.swift in Sources */,
+				DFBF26972A34FB2400E22DC4 /* ConnectionView.swift in Sources */,
+				DFC6BF942A33D5DE00749B13 /* NetworkView.swift in Sources */,
+				DF5C12DC2A325B0F009E1122 /* WiFiClient.swift in Sources */,
 				DF5C12CB2A325A8F009E1122 /* WiFiScanApp.swift in Sources */,
+				DF1EC6DB2A3531CE00F2D3FB /* ScanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,21 +298,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WiFiScan/WiFiScan.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WiFiScan/Preview Content\"";
 				DEVELOPMENT_TEAM = QJQVABWSZ7;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location access is needed for BSSID, Country Code, and stable access to IEs in scan results.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ptorab.WiFiScan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptorab.wifiscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,22 +327,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WiFiScan/WiFiScan.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WiFiScan/WiFiScanRelease.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WiFiScan/Preview Content\"";
 				DEVELOPMENT_TEAM = QJQVABWSZ7;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location access is needed for BSSID, Country Code, and stable access to IEs in scan results.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ptorab.WiFiScan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ptorab.wifiscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF5C12D62A325A90009E1122 /* Build configuration list for PBXNativeTarget "WiFiScan" */ = {
+		DF5C12D62A325A90009E1122 /* Build configuration list for PBXNativeTarget "Wi-Fi API Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF5C12D72A325A90009E1122 /* Debug */,
